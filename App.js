@@ -9,11 +9,12 @@
 import React, { Component } from "react";
 import { Container, View } from "native-base";
 import FilterableList from "./src/components/FilterableList/FilterableList";
+import Clock from "./src/components/Clock/Clock";
 
 type Props = {};
 
 export default class App extends Component<Props> {
   render() {
-    return <FilterableList />;
+    return <Clock />;
   }
 }
