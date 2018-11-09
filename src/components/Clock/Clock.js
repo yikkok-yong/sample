@@ -15,16 +15,16 @@ export default class Clock extends Component<Props, State> {
   countDownIntervalID: any;
   trackMilliseconds: number;
 
-  ONE_MILLISECOND: number = 1;
-
+  ONE_SECOND: number = 1000;
   BUTTON_TEXT_STOP: string = "Stop";
   BUTTON_TEXT_START: string = "Start";
+  TIME_FORMAT: string = "hh:mm:ss";
 
   constructor(props: any) {
     super(props);
 
     this.state = {
-      timer: moment().format("hh:mm")
+      timer: moment().format(this.TIME_FORMAT)
     };
   }
 
@@ -33,7 +33,7 @@ export default class Clock extends Component<Props, State> {
   }
 
   componentDidMount() {
-    this.countDownIntervalID = setInterval(this._countDown, this.ONE_MILLISECOND);
+    this.countDownIntervalID = setInterval(this._countDown, this.ONE_SECOND);
   }
 
   componentWillUnmount() {
@@ -42,7 +42,7 @@ export default class Clock extends Component<Props, State> {
 
   _countDown = () => {
     this.setState({
-      timer: moment().format("hh:mm:ss.SSS")
+      timer: moment().format(this.TIME_FORMAT)
     });
   };
 
@@ -51,7 +51,7 @@ export default class Clock extends Component<Props, State> {
   };
 
   _onPressStartHandle = () => {
-    this.countDownIntervalID = setInterval(this._countDown, this.ONE_MILLISECOND);
+    this.countDownIntervalID = setInterval(this._countDown, this.ONE_SECOND);
   };
 
   render() {
@@ -59,11 +59,11 @@ export default class Clock extends Component<Props, State> {
       <View style={style.timerContainer}>
         <Text style={style.timerText}>{this.state.timer}</Text>
         <View style={style.buttonContainer}>
-          <Button onPress={this._onPressStartHandle}>
+          <Button onPress={this._onPressStartHandle} rounded success>
             <Text>{this.BUTTON_TEXT_START}</Text>
           </Button>
 
-          <Button onPress={this._onPressStopHandle}>
+          <Button onPress={this._onPressStopHandle} rounded danger>
             <Text>{this.BUTTON_TEXT_STOP}</Text>
           </Button>
         </View>
