@@ -7,7 +7,8 @@ const style = StyleSheet.create({
     alignItems: "center"
   },
   timerText: {
-    fontSize: 24
+    fontSize: 24,
+    paddingVertical: 5
   },
   buttonContainer: {
     width: "100%",
