@@ -13,7 +13,6 @@ type State = {
 };
 export default class Clock extends Component<Props, State> {
   countDownIntervalID: any;
-  trackMilliseconds: number;
 
   ONE_SECOND: number = 1000;
   BUTTON_TEXT_STOP: string = "Stop";
