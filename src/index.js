@@ -2,7 +2,7 @@
 
 import React, { PureComponent } from "react";
 import { Container, Content, Header, Body, Text, Footer } from "native-base";
-import FlatListDemo from "./screens/FlatListDemo";
+import PdfDemo from "./screens/PdfDemo";
 
 type Props = {};
 export default class App extends PureComponent<Props> {
@@ -15,9 +15,9 @@ export default class App extends PureComponent<Props> {
           </Body>
         </Header>
 
-        <Content>
-          <FlatListDemo />
-        </Content>
+        {/* <Content style={{ flex: 1 }}> */}
+        <PdfDemo />
+        {/* </Content> */}
 
         <Footer style={{ paddingHorizontal: 10, alignItems: "center", justifyContent: "space-between", backgroundColor: "#eee" }}>
           <Text note>Expo and React Native</Text>
