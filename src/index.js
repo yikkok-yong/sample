@@ -1,29 +1,29 @@
 // @flow
 
 import React, { PureComponent } from "react";
-import { Container, Content, Header, Body, Text, Footer } from "native-base";
+import { Container, Content, Header, Body, Text, Footer, Root } from "native-base";
 import PdfDemo from "./screens/PdfDemo";
 
 type Props = {};
 export default class App extends PureComponent<Props> {
   render() {
     return (
-      <Container style={{ marginTop: 20 }}>
-        <Header style={{ backgroundColor: "#eee" }}>
+      <Root>
+        <Container style={{ marginTop: 20 }}>
+          {/* <Header style={{ backgroundColor: "#eee" }}>
           <Body>
             <Text style={{ fontWeight: "500", textDecorationLine: "underline" }}>The place where magic born</Text>
           </Body>
-        </Header>
+        </Header> */}
 
-        {/* <Content style={{ flex: 1 }}> */}
-        <PdfDemo />
-        {/* </Content> */}
+          <PdfDemo />
 
-        <Footer style={{ paddingHorizontal: 10, alignItems: "center", justifyContent: "space-between", backgroundColor: "#eee" }}>
+          {/* <Footer style={{ paddingHorizontal: 10, alignItems: "center", justifyContent: "space-between", backgroundColor: "#eee" }}>
           <Text note>Expo and React Native</Text>
           <Text note>www.yikkok.com</Text>
-        </Footer>
-      </Container>
+        </Footer> */}
+        </Container>
+      </Root>
     );
   }
 }
