@@ -2,7 +2,7 @@
 
 import React, { PureComponent } from "react";
 import { Container, Content, Header, Body, Text, Footer, Root } from "native-base";
-import PdfDemo from "./screens/PdfDemo";
+import BookListDemo from "./screens/BookListDemo";
 
 type Props = {};
 export default class App extends PureComponent<Props> {
@@ -16,7 +16,7 @@ export default class App extends PureComponent<Props> {
           </Body>
         </Header> */}
 
-          <PdfDemo />
+          <BookListDemo />
 
           {/* <Footer style={{ paddingHorizontal: 10, alignItems: "center", justifyContent: "space-between", backgroundColor: "#eee" }}>
           <Text note>Expo and React Native</Text>

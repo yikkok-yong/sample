@@ -8172,10 +8172,10 @@ react-native-keyboard-aware-scroll-view@0.8.0:
     prop-types "^15.6.2"
     react-native-iphone-x-helper "^1.0.3"
 
-react-native-pdf@^5.0.8:
-  version "5.0.11"
-  resolved "https://registry.yarnpkg.com/react-native-pdf/-/react-native-pdf-5.0.11.tgz#ed5de9de8cc5291451fa18ef4d40ab0f29cc4040"
-  integrity sha512-QkJh0I2cTKXv5Oz0X2ENbU+pyMmGSxEdrLXU14bqOqKwOQxPF6chR8vCmrTtU2rInrB3WHYO2hh80cgo1L5V/w==
+react-native-pdf@5.0.8:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/react-native-pdf/-/react-native-pdf-5.0.8.tgz#bb6f2893fadeaac3c9cff3147ca5d2bf310e1148"
+  integrity sha512-lLfD5C3zptYlvTaqyV5qSRCAM7l/zthLK5qh9JRjSPqhZBwHoZ68ZyVtDJR8JRDR4jQ8nSa3N4rAWp2WmQ/emQ==
   dependencies:
     crypto-js "^3.1.9-1"
     prop-types "^15.5.10"
@@ -8774,10 +8774,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rn-fetch-blob@^0.10.13:
-  version "0.10.15"
-  resolved "https://registry.yarnpkg.com/rn-fetch-blob/-/rn-fetch-blob-0.10.15.tgz#3526860c1c57e0bf4c09bdbe409c919264afffba"
-  integrity sha512-/m/gurTaPAvR3J843uehHhznj5k89x7XClyO5ejmbspNLNQ4ByF+kZs80wiiKGWntj+Wqo0jJu1goArXEfc0kA==
+rn-fetch-blob@0.10.13:
+  version "0.10.13"
+  resolved "https://registry.yarnpkg.com/rn-fetch-blob/-/rn-fetch-blob-0.10.13.tgz#e0fd5eac1a3a872563b35061353d96c4e51ae1cc"
+  integrity sha512-CEz7coPlMMUpX5RB+k7Mqzq+eYYfZuFbpuNkFYhvEFnT5DnZyqdNF50Xk6BuZyqZwAjNvsQ1CUMz7XDvuN10DA==
   dependencies:
     base-64 "0.1.0"
     glob "7.0.6"
